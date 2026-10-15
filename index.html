@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Home | Timeless Furniture & Decor in Dubai</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rust: {
+                            50: '#fdf8f6',
+                            100: '#fbeeeB',
+                            600: '#c85a32',
+                            700: '#a74521',
+                            900: '#732d15',
+                        },
+                        sand: {
+                            50: '#faf8f5',
+                            100: '#f3efe6',
+                            200: '#e5dcc7',
+                            800: '#5c5240',
+                            900: '#3d3527',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans bg-sand-50 text-sand-900 antialiased selection:bg-rust-600 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-sand-50/90 backdrop-blur-md border-b border-sand-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-serif text-2xl md:text-3xl font-bold tracking-wider text-sand-900">
+                RUSTIC HOME <span class="text-rust-600 text-lg block font-sans font-light tracking-widest">DUBAI</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm tracking-widest uppercase">
+                <a href="#about" class="hover:text-rust-600 transition">About</a>
+                <a href="#collections" class="hover:text-rust-600 transition">Collections</a>
+                <a href="#reviews" class="hover:text-rust-600 transition">Reviews</a>
+                <a href="#contact" class="hover:text-rust-600 transition">Visit Showroom</a>
+            </nav>
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="tel:+971508449683" class="bg-rust-600 hover:bg-rust-700 text-white px-5 py-3 rounded-none text-xs uppercase tracking-widest font-semibold transition flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i> +971 50 844 9683
+                </a>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden text-2xl text-sand-900 focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-sand-50 border-b border-sand-200 px-6 py-6 space-y-4 shadow-xl">
+            <a href="#about" class="block text-sm uppercase tracking-widest font-medium hover:text-rust-600">About</a>
+            <a href="#collections" class="block text-sm uppercase tracking-widest font-medium hover:text-rust-600">Collections</a>
+            <a href="#reviews" class="block text-sm uppercase tracking-widest font-medium hover:text-rust-600">Reviews</a>
+            <a href="#contact" class="block text-sm uppercase tracking-widest font-medium hover:text-rust-600">Visit Showroom</a>
+            <a href="tel:+971508449683" class="block text-center bg-rust-600 text-white py-3 text-xs uppercase tracking-widest font-semibold">Call +971 50 844 9683</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex items-center justify-center text-center px-6 pt-20">
+        <div class="max-w-3xl mx-auto text-white" data-aos="fade-up" data-aos-duration="1000">
+            <span class="text-xs uppercase tracking-[0.3em] bg-rust-600/80 px-3 py-1 mb-6 inline-block backdrop-blur-sm">Cityland Mall • Dubai</span>
+            <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                Timeless Craftsmanship & Rustic Elegance
+            </h1>
+            <p class="text-base md:text-xl font-light text-sand-100 mb-10 max-w-2xl mx-auto">
+                Discover unique antique furniture, bespoke creative carpentry, and exquisite bamboo outdoor seating curated for luxury living in the UAE.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#collections" class="w-full sm:w-auto bg-rust-600 hover:bg-rust-700 text-white px-8 py-4 text-xs uppercase tracking-[0.2em] font-semibold transition">
+                    Explore Collections
+                </a>
+                <a href="#contact" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 border border-white/40 backdrop-blur-md text-white px-8 py-4 text-xs uppercase tracking-[0.2em] font-semibold transition">
+                    Get Directions
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Showroom Section -->
+    <section id="about" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div data-aos="fade-right">
+                <span class="text-xs uppercase tracking-[0.2em] text-rust-600 font-semibold block mb-3">Our Sanctuary in Dubai</span>
+                <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-sand-900 mb-6 leading-snug">
+                    Where Quality Meets Timeless Design
+                </h2>
+                <p class="text-sand-800 font-light leading-relaxed mb-6">
+                    Located conveniently in **Cityland Mall, Dubai**, Rustic Home brings a handpicked collection of classic furniture, artisanal coffee tables, cozy outdoor bamboo seating, and handcrafted pots & lanterns that breathe soul into contemporary spaces.
+                </p>
+                <div class="grid grid-cols-2 gap-6 pt-4 border-t border-sand-200">
+                    <div>
+                        <h3 class="font-serif text-3xl font-bold text-rust-600 mb-1">5.0 ★</h3>
+                        <p class="text-xs uppercase tracking-wider text-sand-800">Verified Client Rating</p>
+                    </div>
+                    <div>
+                        <h3 class="font-serif text-3xl font-bold text-rust-600 mb-1">100%</h3>
+                        <p class="text-xs uppercase tracking-wider text-sand-800">Handcrafted Quality</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4" data-aos="fade-left">
+                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=600&q=80" alt="Furniture Showroom" class="w-full h-72 object-cover shadow-lg">
+                <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80" alt="Classic Sofa" class="w-full h-72 object-cover shadow-lg mt-8">
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Showcase -->
+    <section id="collections" class="py-24 bg-sand-100 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+                <span class="text-xs uppercase tracking-[0.2em] text-rust-600 font-semibold block mb-2">Curated Catalog</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-sand-900">Explore Our Signature Pieces</h2>
+                <p class="text-sand-800 text-sm mt-3">From outdoor bamboo lounging to bespoke creative carpentry dining sets.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Item 1 -->
+                <div class="group bg-sand-50 border border-sand-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-500" data-aos="fade-up" data-aos-delay="100">
+                    <div class="overflow-hidden h-80">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Outdoor Furniture" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    </div>
+                    <div class="p-8">
+                        <span class="text-[10px] uppercase tracking-[0.2em] text-rust-600 font-bold block mb-2">Outdoor Elegance</span>
+                        <h3 class="font-serif text-2xl font-bold mb-3 text-sand-900">Bamboo Outdoor Seating</h3>
+                        <p class="text-sand-800 text-sm font-light leading-relaxed mb-6">
+                            Perfect for Dubai’s patios and gardens. Breathable, durable, and breathtakingly aesthetic bamboo craftsmanship.
+                        </p>
+                        <a href="#contact" class="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-semibold text-rust-600 hover:text-rust-700">
+                            Inquire Now <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="group bg-sand-50 border border-sand-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-500" data-aos="fade-up" data-aos-delay="200">
+                    <div class="overflow-hidden h-80">
+                        <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80" alt="Vintage Furniture" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    </div>
+                    <div class="p-8">
+                        <span class="text-[10px] uppercase tracking-[0.2em] text-rust-600 font-bold block mb-2">Classic & Timeless</span>
+                        <h3 class="font-serif text-2xl font-bold mb-3 text-sand-900">Antique & Vintage Finds</h3>
+                        <p class="text-sand-800 text-sm font-light leading-relaxed mb-6">
+                            One-off heritage pieces with rich character and unmatched quality craftsmanship for classic interior connoisseurs.
+                        </p>
+                        <a href="#contact" class="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-semibold text-rust-600 hover:text-rust-700">
+                            Inquire Now <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="group bg-sand-50 border border-sand-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-500" data-aos="fade-up" data-aos-delay="300">
+                    <div class="overflow-hidden h-80">
+                        <img src="https://images.unsplash.com/photo-1544457070-4cd773b4d71e?auto=format&fit=crop&w=800&q=80" alt="Carpentry & Decor" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    </div>
+                    <div class="p-8">
+                        <span class="text-[10px] uppercase tracking-[0.2em] text-rust-600 font-bold block mb-2">Artisanal Carpentry</span>
+                        <h3 class="font-serif text-2xl font-bold mb-3 text-sand-900">Tables, Pots & Lanterns</h3>
+                        <p class="text-sand-800 text-sm font-light leading-relaxed mb-6">
+                            Creative carpentry dining tables, coffee tables, and ambient lighting accents to complete your dream home aesthetic.
+                        </p>
+                        <a href="#contact" class="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-semibold text-rust-600 hover:text-rust-700">
+                            Inquire Now <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Reviews Section -->
+    <section id="reviews" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+            <span class="text-xs uppercase tracking-[0.2em] text-rust-600 font-semibold block mb-2">Client Testimonials</span>
+            <h2 class="font-serif text-3xl md:text-4xl font-bold text-sand-900">Loved Across Dubai</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Review 1 -->
+            <div class="bg-white p-8 border border-sand-200 shadow-sm relative" data-aos="fade-up" data-aos-delay="100">
+                <div class="text-amber-500 text-sm mb-4 space-x-1">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-sand-800 text-sm font-light leading-relaxed mb-6 italic">
+                    "Absolutely in love with my bamboo outdoor seating from Rustic Home Dubai 🤍 The quality, the vibe, everything is just perfect. Their showroom is honestly so beautiful—I wanted to take everything home!"
+                </p>
+                <h4 class="font-serif font-bold text-sand-900">Maya Bitar</h4>
+                <span class="text-xs text-sand-800">Google Review</span>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="bg-white p-8 border border-sand-200 shadow-sm relative" data-aos="fade-up" data-aos-delay="200">
+                <div class="text-amber-500 text-sm mb-4 space-x-1">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-sand-800 text-sm font-light leading-relaxed mb-6 italic">
+                    "A very affordable and excellent collection of antique and classic furniture. Just perfect for anyone who appreciates timeless designs and quality craftsmanship. All the best!"
+                </p>
+                <h4 class="font-serif font-bold text-sand-900">Manoj S</h4>
+                <span class="text-xs text-sand-800">Google Review</span>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="bg-white p-8 border border-sand-200 shadow-sm relative" data-aos="fade-up" data-aos-delay="300">
+                <div class="text-amber-500 text-sm mb-4 space-x-1">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-sand-800 text-sm font-light leading-relaxed mb-6 italic">
+                    "Lovely one off pieces, worth a visit to help a small business in the UAE especially as it’s less known for its location in Cityland, go check out the creative carpentry of coffee tables, chairs, and pots!"
+                </p>
+                <h4 class="font-serif font-bold text-sand-900">Gisella Ferri</h4>
+                <span class="text-xs text-sand-800">Google Review</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit & Contact Section -->
+    <section id="contact" class="py-24 bg-sand-200/50 px-6 border-t border-sand-200">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <span class="text-xs uppercase tracking-[0.2em] text-rust-600 font-semibold block mb-3">Plan Your Visit</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-sand-900 mb-6">Come Experience the Showroom</h2>
+                <div class="space-y-6 text-sand-800">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-rust-600 text-white flex items-center justify-center shrink-0 mt-1">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-serif font-bold text-sand-900 text-lg">Location</h4>
+                            <p class="text-sm font-light">Wadi Al Safa 4, Cityland Mall, Dubai, United Arab Emirates</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-rust-600 text-white flex items-center justify-center shrink-0 mt-1">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-serif font-bold text-sand-900 text-lg">Showroom Hours</h4>
+                            <p class="text-sm font-light">Opens daily at 10:00 AM</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-rust-600 text-white flex items-center justify-center shrink-0 mt-1">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-serif font-bold text-sand-900 text-lg">Direct Inquiries</h4>
+                            <p class="text-sm font-light"><a href="tel:+971508449683" class="hover:text-rust-650 transition">+971 50 844 9683</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Inquiry Form -->
+            <div class="bg-white p-8 md:p-10 shadow-lg border border-sand-200" data-aos="fade-left">
+                <h3 class="font-serif text-2xl font-bold mb-6 text-sand-900">Send an Inquiry</h3>
+                <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to Rustic Home Dubai.');" class="space-y-4">
+                    <div>
+                        <label class="block text-xs uppercase tracking-widest text-sand-800 mb-2 font-semibold">Your Name</label>
+                        <input type="text" required class="w-full bg-sand-50 border border-sand-300 px-4 py-3 text-sm focus:outline-none focus:border-rust-600">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-widest text-sand-800 mb-2 font-semibold">Phone Number / WhatsApp</label>
+                        <input type="text" required class="w-full bg-sand-50 border border-sand-300 px-4 py-3 text-sm focus:outline-none focus:border-rust-600">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-widest text-sand-800 mb-2 font-semibold">Message / Interested Item</label>
+                        <textarea rows="4" required class="w-full bg-sand-50 border border-sand-300 px-4 py-3 text-sm focus:outline-none focus:border-rust-600"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-rust-600 hover:bg-rust-700 text-white py-4 text-xs uppercase tracking-[0.2em] font-semibold transition">
+                        Submit Inquiry
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-sand-900 text-sand-200 py-12 px-6 text-center">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="font-serif text-xl tracking-wider text-white">
+                RUSTIC HOME <span class="text-rust-600 text-sm block font-sans font-light">Dubai, UAE</span>
+            </div>
+            <p class="text-xs text-sand-400 font-light tracking-wider">
+                © 2026 Rustic Home Dubai. All rights reserved. Located in Cityland Mall.
+            </p>
+            <div class="flex space-x-6 text-lg">
+                <a href="#" class="hover:text-rust-600 transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-rust-600 transition"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="hover:text-rust-600 transition"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 100,
+            duration: 800,
+        });
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
